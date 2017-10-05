@@ -3,31 +3,16 @@ Title: Dictionary Based Lemmatization
 Version: 0.0.1
 Authors@R: c(person("Tyler", "Rinker", email = "tyler.rinker@gmail.com", role = c("aut", "cre")))
 Maintainer: Tyler Rinker <tyler.rinker@gmail.com>
-Description: Utilizes tokenization and dictionary lookup for lemmatization of
-    text.  Lemmatization is defined as  "grouping together the
-    inflected forms of a word so they can be analysed as a single
-    item" (wikipedia).  While dictionary lookup of tokens is not a true
-    morphological analysis, this style of lemma replacement is fast and
-    typically still robust for many applications.
-Depends:
-    R (>= 3.4.0)
-Imports:
-    stats,
-    stringi,
-    textclean,
-    textshape
-Suggests:
-    testthat,
-    dplyr
-Date: 2017-10-04
+Description: Utilizes tokenization and dictionary lookup for lemmatization of text.  Lemmatization is
+            defined as "grouping together the inflected forms of a word so they can be analysed as a single
+            item" (wikipedia).  While dictionary lookup of tokens is not a true morphological analysis,
+            this style of lemma replacement is fast and typically still robust for many applications.
+Depends: R (>= 3.4.0)
+Imports: stats, stringi, textclean, textshape
+Suggests: testthat, dplyr
+Date: 2017-10-05
 License: GPL-2
 LazyData: TRUE
 Roxygen: list(wrap = FALSE)
 RoxygenNote: 6.0.1
-Collate: 
-    'hash_lemma.R'
-    'lemma-package.R'
-    'lemmatize.R'
-    'utils.R'
-    'lemma_lang.R'
-    'lemma_words_lang.R'
+Collate: 'hash_lemma.R' 'lemma-package.R' 'lemmatize.R' 'utils.R' 'lemma_lang.R' 'lemma_words_lang.R'

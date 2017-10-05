@@ -4,7 +4,7 @@
 \alias{lemmatize}
 \title{Lemmatize a Vector of Strings}
 \usage{
-lemmatize(x, dictionary = lemma::hash_lemma_en, ...)
+lemmatize(x, dictionary = lemmar::hash_lemma_en, ...)
 }
 \arguments{
 \item{x}{A vector of strings.}
