@@ -4,7 +4,7 @@
 \alias{lemmatize_words}
 \title{Lemmatize a Vector of Words}
 \usage{
-lemmatize_words(x, dictionary = lemma::hash_lemma_en, ...)
+lemmatize_words(x, dictionary = lemmar::hash_lemma_en, ...)
 }
 \arguments{
 \item{x}{A vector of words.}
