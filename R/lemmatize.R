@@ -41,7 +41,7 @@
 #'     round(Sys.time() - tic, 2),
 #'     nrow(presidential_debates_2012)
 #' ))
-lemmatize <- function(x, dictionary = lemma::hash_lemma_en, ...) {
+lemmatize <- function(x, dictionary = lemmar::hash_lemma_en, ...) {
 
     na_locs <- is.na(x)
 
@@ -75,7 +75,7 @@ lemmatize <- function(x, dictionary = lemma::hash_lemma_en, ...) {
 #' @examples
 #' x <- c("the", NA, 'doggies', ',', 'well', 'they', 'aren\'t', 'Joyfully', 'running', '.')
 #' lemmatize_words(x)
-lemmatize_words <- function(x, dictionary = lemma::hash_lemma_en, ...) {
+lemmatize_words <- function(x, dictionary = lemmar::hash_lemma_en, ...) {
     check_dictionary(dictionary)
     locs <- match(tolower(x), tolower(dictionary[[1]]))
     x[!is.na(locs)] <- dictionary[locs[!is.na(locs)], ][[2]]
