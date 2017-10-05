@@ -30,13 +30,15 @@
 #'
 #' ## Bigger data set
 #' library(dplyr)
+#' presidential_debates_2012$dialogue %>%
+#'     head()
 #' gc(); tic <- Sys.time()
 #' presidential_debates_2012$dialogue %>%
 #'     lemmatize() %>%
 #'     head()
 #' cat(sprintf(
-#'     '%s seconds for %s rows of text\n', 
-#'     round(Sys.time() - tic, 2), 
+#'     '%s seconds for %s rows of text\n',
+#'     round(Sys.time() - tic, 2),
 #'     nrow(presidential_debates_2012)
 #' ))
 lemmatize <- function(x, dictionary = lemma::hash_lemma_en, ...) {
@@ -65,7 +67,7 @@ lemmatize <- function(x, dictionary = lemma::hash_lemma_en, ...) {
 #' @param x A vector of words.
 #' @param dictionary A dictionary of base terms and lemmas to use for
 #' replacement.  The first column should be the full word form in lower case
-#' while the second column is the corresponding replacement lemma. 
+#' while the second column is the corresponding replacement lemma.
 #' @param \ldots ignored.
 #' @rdname lemmatize_words
 #' @return Returns a vector of lemmatized words.
