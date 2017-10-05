@@ -1,0 +1,15 @@
+citHeader("To cite lemmar in publications, please use:")
+
+
+citEntry(entry = "manual",
+    title = "{lemmar}: Dictionary Based Lemmatization",
+    author = "Tyler W. Rinker",
+    address = "Buffalo, New York",
+    note = "version 0.0.1",
+    year = "2017",
+    url = "http://github.com/trinker/lemmar",
+    textVersion  = paste("Rinker, T. W. (2017).",
+        "lemmar: Dictionary Based Lemmatization",
+        "version 0.0.1. Buffalo, New York.",
+        "http://github.com/trinker/lemmar")
+)
